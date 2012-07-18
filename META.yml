@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Math-Vector-Real-XS
-version:            0.01
+version:            0.02
 abstract:           Real vector arithmetic in fast XS
 author:
     - Salvador Fandiño <sfandino@yahoo.com>
