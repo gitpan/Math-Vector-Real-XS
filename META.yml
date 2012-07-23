@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Math-Vector-Real-XS
-version:            0.02
+version:            0.03
 abstract:           Real vector arithmetic in fast XS
 author:
     - Salvador Fandiño <sfandino@yahoo.com>
@@ -16,7 +16,7 @@ no_index:
     directory:
         - t
         - inc
-generated_by:       ExtUtils::MakeMaker version 6.57_05
+generated_by:       ExtUtils::MakeMaker version 6.55_02
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
     version:  1.4
