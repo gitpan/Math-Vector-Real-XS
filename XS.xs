@@ -398,6 +398,36 @@ CODE:
 OUTPUT:
     RETVAL
 
+mvr
+first_orthant_reflection(v)
+    mvr v;
+PREINIT:
+    I32 len;
+CODE:
+    len = mvr_len(aTHX_ v);
+    RETVAL = mvr_new(aTHX_ len);
+    mvr_first_orthant_reflection(aTHX_ v, len, RETVAL);
+OUTPUT:
+    RETVAL
+
+NV
+max_dist2_between_boxes(klass, a0, a1, b0, b1)
+    SV *klass = NO_INIT
+    mvr a0
+    mvr a1
+    mvr b0
+    mvr b1
+PREINIT:
+    I32 len;
+CODE:
+    len = mvr_len(aTHX_ a0);
+    mvr_check_len(aTHX_ a1, len);
+    mvr_check_len(aTHX_ b0, len);
+    mvr_check_len(aTHX_ b1, len);
+    RETVAL = mvr_max_dist2_between_boxes(aTHX_ a0, a1, b0, b1, len);
+OUTPUT:
+    RETVAL
+
 void
 box(klass, ...)
     SV *klass = NO_INIT
@@ -509,6 +539,8 @@ PPCODE:
     mvr_versor_me_unsafe(aTHX_ v, len);
     mvr_cross_product_3d(aTHX_ u, v, w);
     XSRETURN(3);
+
+
 
 void
 select_in_ball(v, r, ...)
