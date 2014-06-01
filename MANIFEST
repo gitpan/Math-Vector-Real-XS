@@ -8,6 +8,7 @@ README
 t/Math-Vector-Real-XS.t
 t/Math-Vector-Real.t
 t/warnings.t
+t/perl_vs_xs.t        
 typemap
 XS.xs
 META.yml                                 Module YAML meta-data (added by MakeMaker)

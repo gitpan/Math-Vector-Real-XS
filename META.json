@@ -32,10 +32,10 @@
       },
       "runtime" : {
          "requires" : {
-            "Math::Vector::Real" : "0.12"
+            "Math::Vector::Real" : "0.14"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.06"
+   "version" : "0.07"
 }

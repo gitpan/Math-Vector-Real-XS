@@ -18,5 +18,5 @@ no_index:
     - t
     - inc
 requires:
-  Math::Vector::Real: 0.12
-version: 0.06
+  Math::Vector::Real: 0.14
+version: 0.07
